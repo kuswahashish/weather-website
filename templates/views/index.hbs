@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{htitle}}</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class='main-content'>
+        {{>header}}
+        Search Weather Forecast of Your City!
+        
+        <br>
+        <form action="">
+            <input placeholder="Location">
+            <button value="search">search</button> 
+        </form>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        </div>
+       
+        {{>footer}}
+        <script src="/js/app.js"></script>
+
+    </body>
+</html>
