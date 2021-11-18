@@ -6,6 +6,7 @@ const geocode = require('./utils/geocode.js')
 const forecast = require('./utils/forecast.js')
 
 const app = express()
+const port = process.env.PORT || 3000
 //Defined Path
 const publicPath = path.join(__dirname, '../public')
 const templatePath = path.join(__dirname, '../templates/views')
@@ -88,7 +89,7 @@ app.get('*',(req,res)=>{
         name:'ashish'
     })
 })
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("Server is Ready at port number 3000")
 
 }) 
